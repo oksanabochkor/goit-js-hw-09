@@ -1,18 +1,42 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery-item {
+  flex-basis: calc((100% - 20px) / 3);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.feedback-form {
+  width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.feedback-form button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
